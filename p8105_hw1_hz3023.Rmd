@@ -27,16 +27,8 @@ The mean temperature in this dataset is 39.58.
 ```{r}
 ggp_problem1= ggplot(Problem1, aes(x=time_hour, y=temp, color=humid))+geom_point()
 ggsave("HW1P1ggp.pdf",ggp_problem1, width=8, height=6)
+ggp_problem1
 ```
 
 *This scatter plot shows the variation of temperature throughout January over time. The temperature fluctuates every day and there is no discernible trend. However, the temperature is generally higher during the day and lower at night. The period with higher humidity occurs more frequently in the middle of January.
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
