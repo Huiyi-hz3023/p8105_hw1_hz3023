@@ -46,3 +46,9 @@ mean(Problem2$CV)
 mean(Problem2$FV)
 ```
 * The mean for the random sample of size 10 from a standard normal distribution is 0.13. The mean for the logical vector is 0.6. Both character vector and factor vector don't have mean.
+```{r}
+as.numeric(Problem2$LV)  
+as.numeric(Problem2$CV) 
+as.numeric(Problem2$FV) 
+```
+* The code chunk converts FALSE into 0 and TRUE into 1 for the logical vector, which explains why we can calculate a mean for logical variables. For the character vector, the conversion produces NA values because characters cannot be directly coerced into numbers, so a mean cannot be calculated. For the factor vector, the conversion uses the underlying integer codes assigned to each level (e.g., “high” = 1, “low” = 2, “medium” = 3). However, taking the mean of these codes is not meaningful because the numeric values only represent labels, not quantities.
